@@ -1,5 +1,5 @@
 package air.demo;
 
-public interface Operator {
-    Expression operator(Expression a, Expression b);
+public interface Operator extends Comparable<Operator> {
+    Expression operator(Expression... e);
 }

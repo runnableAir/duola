@@ -1,13 +1,17 @@
 package air.demo;
 
-import java.util.List;
+/**
+ * expression standard interface
+ */
+public interface Expression {
+    /**
+     * An expression could be a consist of expression with operators, but also a single number
+     * Usually, the value of an expression is the result of the value of expressions operated
+     * within it, or the single number presented.
+     *
+     * @return the value of this expression
+     */
+    int getValue();
 
-public class Expression {
-    private List<Expression> sonExpress;
-    private int level;
-    private List<Operator> ops;
-
-    public List<Expression> getSonExpress() {
-        return sonExpress;
-    }
+    String getText();
 }
